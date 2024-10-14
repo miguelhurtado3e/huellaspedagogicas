@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Huellas peadagógicas</title>
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+				font-family: Arial, Helvetica, sans-serif;
+				color: #eee;
+			}
+
+			h1 {
+				padding: 10px;
+				background-color: #04a15c;
+				border-radius: 10px;
+			}
+
+			body {
+				width: 100vw;
+				height: 100vh;
+				background: url('assets/img/index.jpg') no-repeat center center;
+				background-size: cover;
+				display: flex;
+				flex-flow: column;
+				align-items: center;
+				justify-content: center;
+			}
+
+			form {
+				margin-top: 20px;
+				width: 300px;
+			}
+			
+			.select {
+				border-radius: 10px 10px 0 0;
+				background: #2062a3;
+				padding: 20px;
+			}
+
+			#grado { margin-bottom: 10px; }
+
+			select {
+				background-color: #376fa7;
+				border-radius: 5px;
+			}
+
+			input, select {
+				font-size: 18px;
+				padding: 5px;
+				display: block;
+				width: 100%;
+				border: none;
+			}
+
+			input {
+				background-color: #04a15c;
+				padding: 10px;
+				border-radius: 0 0 10px 10px;
+				cursor: pointer;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>Plan individualizado de ajustes razonables</h1>
+		<form>
+			<div class="select">
+				<select id="grado">
+					<option value="11">11</option>					
+					<option value="10">10</option>
+					<option value="9">9</option>
+					<option value="8">8</option>
+					<option value="7">7</option>
+					<option value="6">6</option>
+					<option value="5">5</option>
+					<option value="4">4</option>
+					<option value="3">3</option>
+					<option value="2">2</option>
+					<option value="1">1</option>
+					<option value="0">0</option>
+					<option selected="true" disabled="true">Grado</option>
+				</select>
+				<select id="tema">
+					<option value="0">Fagua</option>
+					<option value="1">Tíquiza</option>
+<!--					<option value="2">Resultados</option> -->
+					<option selected="true" disabled="true">Sede</option>
+				</select>
+			</div>
+			<input type="submit" id="$submit" value="Enviar">
+		</form>
+		<script>
+			$submit.onclick = function(e) {
+				e.preventDefault()
+				const test = [
+					
+					[	// 0
+						'https://drive.google.com/drive/folders/1MBMWVURKwYfCQzl7DsJthEhB0kV65m_u?usp=sharing',  // Observaciones
+						'https://drive.google.com/drive/folders/1T9h894VRH8OJRRmDyXDLKGepIUDUM_FQ?usp=sharing',  // NT
+					//	''  // Resultados
+
+					],
+					[	// 1
+						'https://drive.google.com/drive/folders/1D0ENce3i5ikp_xoRbfOtM9YJBQn5UUcI?usp=sharing',  // Matemática
+						'https://drive.google.com/drive/folders/16_NRZOWYfxFeScIa2LhvbOFDAzX7wqrt?usp=sharing',  // Español
+					//	'https://drive.google.com/drive/folders/1DONDAkV8xluaU8ZlYgommFXz-leuPf3P?usp=sharing'  // Cutura general
+					],
+					[	// 2
+						'https://drive.google.com/drive/folders/17hF9e13w-fQXW9672BavfA0bO2zXzIOH?usp=sharing',  // Matemática
+						'https://drive.google.com/drive/folders/1ZKM9c9BM7_mX9d_spYJhqosUSkAurREt?usp=sharing',  // Español
+					//	'https://drive.google.com/drive/folders/1GmynXwa8HsmT41HpDTQPNbwjYNcnkpj_?usp=sharing'  // Cutura general
+					],
+					[	// 3
+						'https://drive.google.com/drive/folders/1L2V-j8qv9ok3-jtViytmsuVL7B2rHhpF?usp=sharing',  // Matemática
+						'https://drive.google.com/drive/folders/1JDXpugWPq271c5Reqag3xyoT5uLjV1kd?usp=sharing',  // Español
+					//	'https://drive.google.com/drive/folders/1S0Szeu-HcoZCys1MASvoH30oO8Cuh82-?usp=sharing'  // Cutura general
+					],
+					[	// 4
+						'https://drive.google.com/drive/folders/11LWx8Mp0O9eIPhJawZ-tYT-pn1RFIKk7?usp=sharing',  // Matemática
+						'https://drive.google.com/drive/folders/12NOkLgejw_jZzfuBHuMN4BpvrCs7LWcm?usp=sharing',  // Español
+					//	'https://drive.google.com/drive/folders/18iaG_xgCMx52p0-WE1jWz_NZM3r6ipkv?usp=sharing'  // Cutura general
+					],
+					[	// 5
+						'https://drive.google.com/drive/folders/1WpGKzxvk0VqIsFQ9CdOYCr8bedUJVGtC?usp=sharing',  // Matemática
+						'https://drive.google.com/drive/folders/1Fr0ChLIPd6DrMYc7MWiQkH0FHe79x2AB?usp=sharing',  // Español
+					//	'https://drive.google.com/drive/folders/164-VRwtR0zt9XriRd9vODhLlo-b61CLz?usp=sharing'  // Cutura general
+					],
+					[	// 6
+						'https://drive.google.com/drive/folders/1X3kNUGw0URfY86GqyMhinWdm8dix-QcR?usp=sharing',  // Matemática
+						'https://drive.google.com/drive/folders/1Sg7NiyZD32Yp_WUgdLxp_gSQRUdwJcCq?usp=sharing',  // Español
+					//	'https://drive.google.com/drive/folders/158CnPDK2swsQicuGXk4ELeCKgkJoWca_?usp=sharing'  // Cutura general
+					],
+					[	// 7
+						'https://drive.google.com/drive/folders/1lACt2ior1S3zDMKl_bLzYygBRXJYJZZn?usp=sharing',  // Matemática
+						'https://drive.google.com/drive/folders/1kyFLl_92Zywbi-ili-dLLrZkdq4hrN3I?usp=sharing',  // Español
+					//	'https://drive.google.com/drive/folders/1P3y0WE3jC9NAICzyequM78OQwdeZomBR?usp=sharing'  // Cutura general
+					],
+					[	// 8
+						'https://drive.google.com/drive/folders/17YmpPi9m8d4cj-LT01d8dTOFi3rIQ7Is?usp=sharing',  // Matemática
+						'https://drive.google.com/drive/folders/1Tz4Eh_ae_jsxTcOm_eXJPlY2RptBfrfo?usp=sharing',  // Español
+					//	'https://drive.google.com/drive/folders/1l2i9oqpLpOhPkZlsuiTn-cWFRpYvCiaD?usp=sharing'  // Cutura general
+					],
+					[	// 9
+						'https://drive.google.com/drive/folders/17YmpPi9m8d4cj-LT01d8dTOFi3rIQ7Is?usp=sharing',  // Matemática
+						'https://drive.google.com/drive/folders/1Y-GYc5lBLdsfwZkeNYO0dSw_3ASNXtji?usp=sharing',  // Español
+					//	'https://drive.google.com/drive/folders/1hI4b8EcHG7HwYGOC6WgwHYDKz3fmSPPZ?usp=sharing'  // Cutura general
+					],
+					[	// 10
+						'https://drive.google.com/drive/folders/1BbqbhlOaZwCgvbYspYR2-uhwWXXlHK50?usp=sharing',  // Matemática
+						'https://drive.google.com/drive/folders/1_03hUkq-hKaxFPs4SezLya_TxykrViU8?usp=sharing',  // Español
+					//	'https://drive.google.com/drive/folders/1ctGZuB8BarZM6WeZzEY4FwUC82yuEwYb?usp=sharing'  // Cutura general
+					],
+					[	// 11
+						'https://drive.google.com/drive/folders/1HbeprxCfP-zm-qc8SOpHphPPauUAWB9D?usp=sharing',  // Matemática
+						'https://drive.google.com/drive/folders/1Y5_n0vnU3ebBah93sr-a-RtAzWF1MFg-?usp=sharing',  // Español
+					//	''  // Cutura general
+					]
+				]
+				const grado = this.parentElement[0].value
+				const tema = this.parentElement[1].value
+				const url = test[grado][tema]
+				window.location.href = url
+			}
+		</script>
+	</body>
+</html>
+
