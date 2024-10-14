@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Huellas Pedagógicas</title>
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+				font-family: Arial, Helvetica, sans-serif;
+				color: #eee;
+			}
+
+			h1 {
+				padding: 10px;
+				background-color: #04a15c;
+				border-radius: 10px;
+			}
+
+			body {
+				width: 100vw;
+				height: 100vh;
+				background: url('assets/img/index.jpg') no-repeat center center;
+				background-size: cover;
+				display: flex;
+				flex-flow: column;
+				align-items: center;
+				justify-content: center;
+			}
+
+			form {
+				margin-top: 20px;
+				width: 300px;
+			}
+			
+			.select {
+				border-radius: 10px 10px 0 0;
+				background: #2062a3;
+				padding: 20px;
+			}
+
+			#grado { margin-bottom: 10px; }
+
+			select {
+				background-color: #376fa7;
+				border-radius: 5px;
+			}
+
+			input, select {
+				font-size: 18px;
+				padding: 5px;
+				display: block;
+				width: 100%;
+				border: none;
+			}
+
+			input {
+				background-color: #04a15c;
+				padding: 10px;
+				border-radius: 0 0 10px 10px;
+				cursor: pointer;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>Huellas Pedagógicas</h1>
+		<form>
+			<div class="select">
+				<select id="grado">
+					<option value="11">11</option>
+					<option value="10">10</option>
+					<option value="9">9</option>
+					<option value="8">8</option>
+					<option value="7">7</option>
+					<option value="6">6</option>
+					<option value="5">5</option>
+					<option value="4">4</option>
+					<option value="3">3</option>
+					<option value="2">2</option>
+					
+					<option selected="true" disabled="true">Grado</option>
+				</select>
+				<select id="tema">
+					<option value="0">Matemáticas</option>
+					<option value="1">Español</option>
+					<option value="2">Háblame de ti</option>
+					<option selected="true" disabled="true">Tema</option>
+				</select>
+			</div>
+			<input type="submit" id="$submit" value="Enviar">
+		</form>
+		<script>
+			$submit.onclick = function(e) {
+				e.preventDefault()
+				const test = [
+					
+					[	// 2
+						'https://docs.google.com/forms/d/e/1FAIpQLSdoE7wUOKbUFN8EJA6xskNBlHmsXbPtGJyxKgY7By-Z8h1WOQ/viewform?usp=sharing',  // Matemática
+						'https://docs.google.com/forms/d/e/1FAIpQLSd3XfkdcmLfLdLs4-YpZ0yWDy3LUCbS_T22Gh7I53XAbOEldA/viewform?usp=pp_url',  // Español
+						'https://www.cultura general.com'  // Hablame de ti
+					],
+					[	// 3
+						'https://docs.google.com/forms/d/e/1FAIpQLSdsi0UbFfnKqFy59HaWVXo5TFNb9cFrJ74knSmQDzXpsz6epw/viewform?usp=sharing',  // Matemática
+						'https://docs.google.com/forms/d/e/1FAIpQLScAeNwkjpZcXbm0T5bCF0s9ocvFhdzlLSsPV8c91tMDNpgZ3Q/viewform?usp=sharing',  // Español
+						'https://docs.google.com/forms/d/e/1FAIpQLSeM2warYRm_okG-100qUjI6GYm23J8z5O7YKKh7eIfqNNHshg/viewform?usp=sharing'  // Hablame de ti
+					],
+					[	// 4
+						'https://docs.google.com/forms/d/e/1FAIpQLSfd_94c3W4pbf-RTbNaXgtAnYlc65LLQuEOTsfWbrv3j7tN4A/viewform?usp=sharing',  // Matemática
+						'https://docs.google.com/forms/d/e/1FAIpQLSfNEuJUj9qR4BGrs5udYLbHaaQJkJ9KLEhRdh4H8uCtw8U4EQ/viewform?usp=sharing',  // Español
+						'https://docs.google.com/forms/d/e/1FAIpQLSfT59g6RBCUePNDyhU8QXMlrBHGzS9gByMi3Wg4zQ28zoGU8A/viewform?usp=sharing'  // Hablame de ti
+					],
+					[	// 5
+						'https://docs.google.com/forms/d/e/1FAIpQLSdKOgK7jTi1uclwO7f2ts2rxqfvL0oPiPjaPdZL7nW-Z1RrYQ/viewform?usp=sharing',  // Matemática
+						'https://docs.google.com/forms/d/e/1FAIpQLScYzysdpTNs3PNNLUciSGXKx-xrip09xfsVYGddkSohF8azeQ/viewform?usp=sharing',  // Español
+						'https://docs.google.com/forms/d/e/1FAIpQLSeYGJr1Mr3HPFIRsnjIdMZdLrixJKd50hWMB7qUXQkW_VuviA/viewform?usp=sharing'  // Hablame de ti
+					],
+					[	// 6
+						'https://docs.google.com/forms/d/e/1FAIpQLSfr65_MFcJ11ZuZq-LY1wXtqA2NFrNFs0pQ88u2yNuTL4HiJw/viewform?usp=sharing',  // Matemática
+						'https://docs.google.com/forms/d/e/1FAIpQLScMCjaiHBs8V9zvaiPe-IGG4xUZ0id2WU6-Bcp3HIHiK9wQcA/viewform?usp=sharing',  // Español
+						'https://docs.google.com/forms/d/e/1FAIpQLSd2BxYaXFwt3Myy__x5_yA9REvqat8oBIknrHlUlrKROj4VpA/viewform?usp=sharing'  // Hablame de ti
+					],
+					[	// 7
+						'https://docs.google.com/forms/d/e/1FAIpQLSeGLCiwnVlkbpVQZvoE5L0soUhX6B6Kw0gcH5T2LQbGkYfdxw/viewform?usp=sharing',  // Matemática
+						'https://docs.google.com/forms/d/e/1FAIpQLSdhRSNq5TCqhyjQQq1gYesxtgQHuoAdqazt22RYZGdQuS3OYQ/viewform?usp=sharing',  // Español
+						'https://docs.google.com/forms/d/e/1FAIpQLSdwCURmXoLjuP6_DuYRW2GJZXI24uiXrFY2o3ODsiYwFKEDaA/viewform?usp=sharing'  // Hablame de ti
+					],
+					[	// 8
+						'https://docs.google.com/forms/d/e/1FAIpQLSfu9yhrK2LhHnT1Up0GVYfB6pkYwD67i6ysfQrMV-jDxHumGA/viewform?usp=sharing',  // Matemática
+						'https://docs.google.com/forms/d/e/1FAIpQLSditT9d90i3-AaU4UGdPWOTxT39VKwu0PrM5EtMnVSJyborlg/viewform?usp=sharing',  // Español
+						'https://docs.google.com/forms/d/e/1FAIpQLSd5xuI05cOFh0CpaoA9THhFzXa7vt2PydMX537cOacNyoSEwg/viewform?usp=sharing'  // Hablame de ti
+					],
+					[	// 9
+						'https://docs.google.com/forms/d/e/1FAIpQLSf-LccJpo0ZSvA-EbGmni6TaAJM7u0e1a5Cz8qkWKYnrd-3vA/viewform?usp=sharing',  // Matemática
+						'https://docs.google.com/forms/d/e/1FAIpQLSfHm7qGi7kl1AigcU03RWbxmfB3NGK80Uq04SdBsKgp3kqY9w/viewform?usp=sharing',  // Español
+						'https://docs.google.com/forms/d/e/1FAIpQLScygmxvAK-mjF3pWkkeFsTjWsOF8achBmLw2XtTPkZ086jPWw/viewform?usp=sharing'  // Hablame de ti
+					],
+					[	// 10
+						'https://docs.google.com/forms/d/e/1FAIpQLSfrKeV47bToq5bWtQEn5MIIuvd2_w6CpZ5Z55v8DAeY_EdSSQ/viewform?usp=sharing',  // Matemática
+						'https://docs.google.com/forms/d/e/1FAIpQLSfL62meOpb_eAaj9PglCP-bw65-nlbajFRvj1wXxUyFt7v3-g/viewform?usp=sharing',  // Español
+						'https://docs.google.com/forms/d/e/1FAIpQLSfIokuC0d2fjZNk2vzMOHBfUdRKWCc-b35jQxWvrcGMts5JqQ/viewform?usp=sharing'  // Hablame de ti
+					],
+					[	// 11
+						'https://docs.google.com/forms/d/e/1FAIpQLSe3OOZZ6djMJmujEa02Ai3oGbbUFzKkl-sLiGLIv-SUIHLNqw/viewform?usp=sharing',  // Matemática
+						'https://docs.google.com/forms/d/e/1FAIpQLSfziogw3DAhtBS4fvXbbFRNL4xTWmF-rJZwwJZth54wIOSfmg/viewform?usp=sharing',  // Español
+						'https://docs.google.com/forms/d/e/1FAIpQLSeGUd_HdoFRSIRAfjf8SyuErFOSPChAp5L9lvwOr_rviQVBRg/viewform?usp=sharing'  // Hablame de ti
+					]
+				]
+				const grado = this.parentElement[0].value - 2
+				const tema = this.parentElement[1].value
+				const url = test[grado][tema]
+				window.location.href = url
+			}
+		</script>
+	</body>
+</html>
+
