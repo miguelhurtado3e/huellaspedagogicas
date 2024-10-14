@@ -1,0 +1,111 @@
+body{
+    background: url('imagenes/fondo.jpg');
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 50px;
+}
+/*Botones de cursos en index*/
+div {
+    margin: 5px;
+}
+
+.btn{
+    background-color:#FF5722;
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 15px 20px;
+    display: inline-block;
+    border-radius: 100px;
+    transition: all .3s ease;
+}
+.naranja{
+    background-color:#f9a03f;
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 15px 20px;
+    display: inline-block;
+    border-radius: 100px;
+    transition: all .3s ease;
+}
+.btn:hover{
+    background-color: #64DD17;
+}
+.naranja:hover{
+    background-color: #f7ff54;
+    color: #239b53;
+}
+object{
+    width: 800px;
+    height: 1000px;
+}
+body{
+    
+    background-image: url(https://image.freepik.com/foto-gratis/computadora-pantalla-blanca-tabla-fondo-blur-concepto-tecnologia_1418-1322.jpg);
+     background-repeat:no-repeat;
+    background-size: 1900px 1000px ;
+    
+    
+    
+    }
+
+    h1{
+        background :#EFF1F1;
+        color: #000000;
+      body{
+    background: url('imagenes/fondo.jpg');
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 50px;
+}
+/*Botones de cursos en index*/
+div {
+    margin: 5px;
+}
+
+.btn{
+    background-color:#FF5722;
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 15px 20px;
+    display: inline-block;
+    border-radius: 100px;
+    transition: all .3s ease;
+}
+.naranja{
+    background-color:#f9a03f;
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 15px 20px;
+    display: inline-block;
+    border-radius: 100px;
+    transition: all .3s ease;
+}
+.btn:hover{
+    background-color: #64DD17;
+}
+.naranja:hover{
+    background-color: #f7ff54;
+    color: #239b53;
+}
+object{
+    width: 800px;
+    height: 1000px;
+}
+body{
+    
+    background-image: url(https://image.freepik.com/foto-gratis/computadora-pantalla-blanca-tabla-fondo-blur-concepto-tecnologia_1418-1322.jpg);
+     background-repeat:no-repeat;
+    background-size: 1900px 1000px ;
+    
+    
+    
+    }
+
+    h1{
+        background :#EFF1F1;
+        color: #000000;
+      }
